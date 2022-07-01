@@ -1,10 +1,10 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "",
-    "beforeDevCommand": "",
-    "devPath": "../dist",
-    "distDir": "../dist"
+    "beforeBuildCommand": "pipenv run make revealjs",
+    "beforeDevCommand": "pipenv run make revealjs",
+    "devPath": "../build/revealjs",
+    "distDir": "../build/revealjs"
   },
   "package": {
     "productName": "tauri-presentation",
@@ -56,10 +56,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 900,
         "resizable": true,
         "title": "Tauri presentation demo",
-        "width": 800
+        "width": 1200
       }
     ]
   }
