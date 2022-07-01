@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "pipenv run make revealjs",
-    "beforeDevCommand": "pipenv run make revealjs",
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
     "devPath": "../build/revealjs",
     "distDir": "../build/revealjs"
   },
